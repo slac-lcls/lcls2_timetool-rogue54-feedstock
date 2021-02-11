@@ -1,4 +1,4 @@
-{% set name = "lcls_timetool" %}
+{% set name = "lcls2_timetool" %}
 {% set version = "3.3.0" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url:  https://pswww.slac.stanford.edu/swdoc/tutorials/{{ name }}-{{ version }}.tar.gz
-  sha256: 9dc87288ce41afbc3f24e95a8113cb68f03a852ff4ef0529c16378709be3c7e7
+  sha256: a702e0a39d0e87d28679330a16f6f503fd1571e7151d5aa5332794a0fc110acb
 
 build:
   skip: True  # [win or osx]
