@@ -1,12 +1,12 @@
 {% set name = "lcls2_timetool" %}
-{% set version = "3.3.0git5" %}
+{% set version = "3.3.0+5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url:  https://pswww.slac.stanford.edu/swdoc/tutorials/lcls2-timetool-{{ version }}.tar.gz
+  url:  https://pswww.slac.stanford.edu/swdoc/tutorials/{{ name }}-{{ version }}.tar.gz
   sha256: dcad90add2e0dd4363282132985a9c224c3923cc5a13b15d0bdb5e592fd8f698
 
 build:
