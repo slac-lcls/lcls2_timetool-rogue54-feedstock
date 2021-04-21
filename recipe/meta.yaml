@@ -1,20 +1,18 @@
 {% set name = "lcls2_timetool" %}
-{% set version = "3.3.0" %}
+{% set version = "3.3.0git5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url:  https://pswww.slac.stanford.edu/swdoc/tutorials/{{ name }}-{{ version }}.tar.gz
-  sha256: a702e0a39d0e87d28679330a16f6f503fd1571e7151d5aa5332794a0fc110acb
-  patches:
-    - pip.patch
+  url:  https://pswww.slac.stanford.edu/swdoc/tutorials/lcls2-timetool-{{ version }}.tar.gz
+  sha256: dcad90add2e0dd4363282132985a9c224c3923cc5a13b15d0bdb5e592fd8f698
 
 build:
   skip: True  # [win or osx]
   noarch: python
-  number: 4
+  number: 0
   script:
     - "{{ PYTHON }} -m pip install . -vv"
 
