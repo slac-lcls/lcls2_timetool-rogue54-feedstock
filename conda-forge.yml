@@ -19,5 +19,5 @@ channels:
     - defaults
   targets:
     - lcls-ii
-    - ["lcls-ii", "main"]
+    - ["lcls-ii", "rogue54"]
 
