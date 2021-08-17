@@ -3,7 +3,7 @@ cdt_name:
 channel_sources:
 - lcls-ii,conda-forge,defaults
 channel_targets:
-- lcls-ii main
+- lcls-ii rogue54
 docker_image:
 - quay.io/condaforge/linux-anvil-comp7
 pin_run_as_build:
